@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>MySQL命令总结 | 勾海成的blog</title>
+  <title>MySQL命令（设计表与数据库） | 勾海成的blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="description" content="创建数据库1create database 数据库名;  选择数据库1use 数据库名;  删除数据库1drop database 数据库名;  创建数据表1234567create table 表名  (  列名 数据类型 [列级别约束条件] [默认值],  列名 数据类型 [列级别约束条件] [默认值],  …  [表级别约束条件]  );">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL命令总结">
+<meta property="og:title" content="MySQL命令（设计表与数据库）">
 <meta property="og:url" content="http://yoursite.com/2019/10/18/MySQL知识点总结/index.html">
 <meta property="og:site_name" content="勾海成的blog">
 <meta property="og:description" content="创建数据库1create database 数据库名;  选择数据库1use 数据库名;  删除数据库1drop database 数据库名;  创建数据表1234567create table 表名  (  列名 数据类型 [列级别约束条件] [默认值],  列名 数据类型 [列级别约束条件] [默认值],  …  [表级别约束条件]  );">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-10-18T14:10:48.902Z">
+<meta property="og:updated_time" content="2019-10-20T12:16:10.341Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MySQL命令总结">
+<meta name="twitter:title" content="MySQL命令（设计表与数据库）">
 <meta name="twitter:description" content="创建数据库1create database 数据库名;  选择数据库1use 数据库名;  删除数据库1drop database 数据库名;  创建数据表1234567create table 表名  (  列名 数据类型 [列级别约束条件] [默认值],  列名 数据类型 [列级别约束条件] [默认值],  …  [表级别约束条件]  );">
   
     <link rel="alternative" href="/atom.xml" title="勾海成的blog" type="application/atom+xml">
@@ -182,7 +182,7 @@
   
   
     <h1 class="article-title" itemprop="name">
-      MySQL命令总结
+      MySQL命令（设计表与数据库）
     </h1>
   
 
@@ -203,7 +203,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">149字</span>
+      <span class="post-count">198字</span>
     </span>
   </span>
 
@@ -237,6 +237,12 @@
 <h4 id="设置主键自动增加"><a href="#设置主键自动增加" class="headerlink" title="设置主键自动增加"></a>设置主键自动增加</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">列名 数据类型 auto_increment primary key;</span><br></pre></td></tr></table></figure>
 
 <h4 id="使用外键约束"><a href="#使用外键约束" class="headerlink" title="使用外键约束"></a>使用外键约束</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[constraint 外键名]foregin key 字段名1[,字段名2,…]</span><br><span class="line">references 主表名 主键列1[,主键列2,…];</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用默认约束"><a href="#使用默认约束" class="headerlink" title="使用默认约束"></a>使用默认约束</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">字段名 数据类型 default 默认值;</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用非空约束"><a href="#使用非空约束" class="headerlink" title="使用非空约束"></a>使用非空约束</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">字段名 数据类型 not null;</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用唯一约束"><a href="#使用唯一约束" class="headerlink" title="使用唯一约束"></a>使用唯一约束</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">字段名 数据类型 unique;</span><br></pre></td></tr></table></figure>
     
 
     
